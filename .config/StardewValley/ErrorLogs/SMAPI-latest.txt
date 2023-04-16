@@ -1,0 +1,320 @@
+[16:27:17 INFO  SMAPI] SMAPI 3.18.2 with Stardew Valley 1.5.6 (build 1.3.37.0) on Unix 6.2.11.1
+[16:27:17 INFO  SMAPI] Mods go here: /home/haqqi/.local/share/Steam/steamapps/common/Stardew Valley/Mods
+[16:27:17 TRACE SMAPI] Log started at 2023-04-16T09:27:17 UTC
+[16:27:21 DEBUG SMAPI] Waiting for game to launch...
+[16:27:21 TRACE game] NoFpsCap: This feature is not available
+[16:27:23 DEBUG SMAPI] Loading mod metadata...
+[16:27:23 DEBUG SMAPI] Loading mods...
+[16:27:23 TRACE SMAPI]    Save Backup (from Mods/SaveBackup/SaveBackup.dll)...
+[16:27:23 TRACE SMAPI]    Error Handler (from Mods/ErrorHandler/ErrorHandler.dll)...
+[16:27:23 TRACE SMAPI]       Detected game patcher in assembly ErrorHandler.dll.
+[16:27:23 TRACE SMAPI]    Console Commands (from Mods/ConsoleCommands/ConsoleCommands.dll)...
+[16:27:23 TRACE SMAPI]    CJB Cheats Menu (from Mods/mods/CJBCheatsMenu/CJBCheatsMenu.dll)...
+[16:27:23 TRACE SMAPI]    CJB Item Spawner (from Mods/mods/CJBItemSpawner/CJBItemSpawner.dll)...
+[16:27:23 TRACE SMAPI]    UI Info Suite 2 (from Mods/mods/UIInfoSuite2/UIInfoSuite2.dll)...
+[16:27:23 INFO  SMAPI] Loaded 6 mods:
+[16:27:23 INFO  SMAPI]    CJB Cheats Menu 1.33.0 by CJBok and Pathoschild | Simple in-game cheats menu!
+[16:27:23 INFO  SMAPI]    CJB Item Spawner 2.2.3 by CJBok and Pathoschild | Simple in-game item spawner!
+[16:27:23 INFO  SMAPI]    Console Commands 3.18.2 by SMAPI | Adds SMAPI console commands that let you manipulate the game.
+[16:27:23 INFO  SMAPI]    Error Handler 3.18.2 by SMAPI | Handles some common vanilla errors to log more useful info or avoid breaking the game.
+[16:27:23 INFO  SMAPI]    Save Backup 3.18.2 by SMAPI | Automatically backs up all your saves once per day into its folder.
+[16:27:23 INFO  SMAPI]    UI Info Suite 2 2.2.9 by Annosz | Adds a useful information to the user interface. Based on Cdaragorn's excellent UI Info Suite.
+
+[16:27:23 DEBUG SMAPI] Launching mods...
+[16:27:23 TRACE Save Backup] Already backed up today.
+[16:27:24 TRACE CJB Cheats Menu] Started with menu key P.
+[16:27:24 TRACE CJB Item Spawner] Started with menu key I.
+[16:27:24 DEBUG SMAPI] Mods loaded and ready!
+[16:27:24 TRACE SMAPI] Checking for updates...
+[16:27:24 TRACE game] setGameMode( 'titleScreenGameMode (0)' )
+[16:27:25 TRACE game] Steam logged on: True
+[16:27:25 TRACE game] Initializing GalaxySDK
+[16:27:25 WARN  SMAPI] Couldn't check for a new version of SMAPI. This won't affect your game, but you won't be notified of new versions if this keeps happening.
+[16:27:25 TRACE SMAPI] Error: System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: PartialChain
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Pathoschild.Http.Client.FluentClient.SendImplAsync(IRequest request)
+   at Pathoschild.Http.Client.FluentClient.<SendAsync>b__23_0(IRequest req)
+   at Pathoschild.Http.Client.Internal.Request.Execute()
+   at Pathoschild.Http.Client.Internal.Request.As[T]()
+   at StardewModdingAPI.Toolkit.Framework.Clients.WebApi.WebApiClient.GetModInfoAsync(ModSearchEntryModel[] mods, ISemanticVersion apiVersion, ISemanticVersion gameVersion, Platform platform, Boolean includeExtendedMetadata) in SMAPI.Toolkit\Framework\Clients\WebApi\WebApiClient.cs:line 47
+   at StardewModdingAPI.Framework.SCore.CheckForUpdatesAsync(IModMetadata[] mods) in SMAPI\Framework\SCore.cs:line 1534
+[16:27:25 TRACE SMAPI]    Checking for updates to 3 mods...
+[16:27:25 TRACE game] Requesting Steam app ticket
+[16:27:25 TRACE SMAPI] Detecting common issues...
+[16:27:25 INFO  SMAPI] Type 'help' for help, or 'help <cmd>' for a command's usage
+[16:27:25 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:800 Height:480}
+[16:27:25 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:466 Height:496}
+[16:27:25 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[16:27:25 TRACE game] Signing into GalaxySDK
+[16:27:26 WARN  SMAPI] Couldn't check for new mod versions. This won't affect your game, but you won't be notified of mod updates if this keeps happening.
+[16:27:26 TRACE SMAPI] System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: PartialChain
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Pathoschild.Http.Client.FluentClient.SendImplAsync(IRequest request)
+   at Pathoschild.Http.Client.FluentClient.<SendAsync>b__23_0(IRequest req)
+   at Pathoschild.Http.Client.Internal.Request.Execute()
+   at Pathoschild.Http.Client.Internal.Request.As[T]()
+   at StardewModdingAPI.Toolkit.Framework.Clients.WebApi.WebApiClient.GetModInfoAsync(ModSearchEntryModel[] mods, ISemanticVersion apiVersion, ISemanticVersion gameVersion, Platform platform, Boolean includeExtendedMetadata) in E:\source\_Stardew\SMAPI\src\SMAPI.Toolkit\Framework\Clients\WebApi\WebApiClient.cs:line 47
+   at StardewModdingAPI.Framework.SCore.CheckForUpdatesAsync(IModMetadata[] mods) in E:\source\_Stardew\SMAPI\src\SMAPI\Framework\SCore.cs:line 1594
+[16:27:28 TRACE game] Galaxy auth success
+[16:27:28 TRACE game] Galaxy signed in
+[16:27:28 TRACE game] Galaxy logged on
+[16:27:57 TRACE SMAPI] Synchronizing 'Farm_SpaceCheck' task...
+[16:27:57 TRACE SMAPI]    task complete.
+[16:30:28 TRACE game] setGameMode( 'playingGameMode (3)' )
+[16:30:28 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[16:31:02 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[16:31:02 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[16:31:05 TRACE game] Warping to BusStop
+[16:31:05 TRACE game] setupEventCommands() registered '130' methods
+[16:31:07 TRACE game] Warping to FarmHouse
+[16:31:07 TRACE SMAPI] Synchronizing 'NewDay' task...
+[16:31:08 TRACE SMAPI]    task complete.
+[16:31:08 TRACE SMAPI] Context: before save creation.
+[16:31:08 TRACE game] SaveGame.Save() called.
+[16:31:08 TRACE SMAPI] Synchronizing 'Save' task...
+[16:31:08 TRACE game] Saving without compression...
+[16:31:10 TRACE SMAPI]    task complete.
+[16:31:10 TRACE game] SaveGame.Save() completed without exceptions.
+[16:31:11 TRACE SMAPI] Context: after save creation, starting spring 1 Y1.
+[16:31:11 TRACE SMAPI] Context: loaded save 'Heavenly_341314037', starting spring 1 Y1, locale set to . Single-player.
+[16:31:11 INFO  UI Info Suite 2] Setting up icon sheet
+[16:31:24 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[16:31:25 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[16:31:32 TRACE CJB Cheats Menu] Received menu open key.
+[16:31:34 TRACE CJB Item Spawner] Received menu open key.
+[16:31:35 TRACE CJB Item Spawner] Received menu open key, but a 'ItemMenu' menu is already open.
+[16:31:36 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[16:32:00 TRACE game] Warping to Farm
+[16:35:05 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[16:35:20 TRACE game] Warping to BusStop
+[16:35:31 TRACE game] Warping to Town
+[16:35:41 TRACE game] Warping to SeedShop
+[16:36:20 TRACE game] Warping to Town
+[16:36:31 TRACE game] Warping to Hospital
+[16:36:41 TRACE game] Warping to Town
+[16:37:12 TRACE game] Warping to Blacksmith
+[16:37:18 TRACE game] Warping to Town
+[16:37:24 TRACE game] Warping to ArchaeologyHouse
+[16:37:30 TRACE game] Warping to Town
+[16:37:42 TRACE game] Warping to Beach
+[16:37:55 TRACE game] Warping to Town
+[16:38:06 TRACE game] Warping to HaleyHouse
+[16:38:12 TRACE game] Warping to Town
+[16:38:18 TRACE game] Warping to SamHouse
+[16:38:26 TRACE game] Warping to Town
+[16:38:43 TRACE game] Warping to JoshHouse
+[16:38:54 TRACE game] Warping to Town
+[16:39:12 TRACE game] Warping to Forest
+[16:39:21 TRACE game] Warping to AnimalShop
+[16:39:24 TRACE game] Warping to Forest
+[16:40:03 TRACE game] Warping to Town
+[16:40:49 TRACE game] Warping to Mountain
+[16:41:17 TRACE game] Warping to ScienceHouse
+[16:41:25 TRACE game] Warping to Mountain
+[16:41:34 TRACE CJB Cheats Menu] Received menu open key.
+[16:41:36 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[16:43:04 TRACE game] Warping to Town
+[16:43:22 TRACE game] Warping to Saloon
+[16:43:31 TRACE game] Warping to Town
+[16:43:46 TRACE game] Warping to BusStop
+[16:43:53 TRACE game] Warping to Farm
+[16:45:49 TRACE CJB Item Spawner] Received menu open key.
+[16:45:55 TRACE CJB Cheats Menu] Received menu open key, but a 'ItemMenu' menu is already open.
+[16:46:01 TRACE CJB Cheats Menu] Received menu open key.
+[16:46:02 TRACE CJB Cheats Menu] Received menu open key.
+[16:46:30 TRACE game] Warping to FarmHouse
+[16:46:31 TRACE game] Warping to Farm
+[16:46:37 TRACE game] Warping to FarmHouse
+[16:46:42 TRACE SMAPI] Synchronizing 'NewDay' task...
+[16:46:42 TRACE SMAPI]    task complete.
+[16:46:42 TRACE SMAPI] Context: before save.
+[16:46:42 TRACE game] SaveGame.Save() called.
+[16:46:42 TRACE SMAPI] Synchronizing 'Save' task...
+[16:46:42 TRACE game] Saving without compression...
+[16:46:42 TRACE SMAPI]    task complete.
+[16:46:42 TRACE game] SaveGame.Save() completed without exceptions.
+[16:46:44 TRACE SMAPI] Context: after save, starting spring 2 Y1.
+[16:46:47 TRACE game] Warping to Farm
+[16:49:53 TRACE game] Warping to BusStop
+[16:50:00 TRACE game] Warping to Town
+[16:50:07 TRACE CJB Cheats Menu] Received menu open key.
+[16:50:30 TRACE game] Warping to Beach
+[16:50:34 TRACE game] Warping to Beach
+[16:50:53 TRACE game] Warping to FishShop
+[16:51:04 TRACE game] Warping to Beach
+[16:52:59 TRACE game] Warping to Town
+[16:53:19 TRACE game] Warping to BusStop
+[16:53:26 TRACE game] Warping to Farm
+[16:53:54 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[16:58:06 TRACE game] Warping to FarmHouse
+[16:58:12 TRACE SMAPI] Synchronizing 'NewDay' task...
+[16:58:12 TRACE SMAPI]    task complete.
+[16:58:18 TRACE SMAPI] Context: before save.
+[16:58:25 TRACE game] SaveGame.Save() called.
+[16:58:25 TRACE SMAPI] Synchronizing 'Save' task...
+[16:58:25 TRACE game] Saving without compression...
+[16:58:25 TRACE SMAPI]    task complete.
+[16:58:25 TRACE game] SaveGame.Save() completed without exceptions.
+[16:58:29 TRACE SMAPI] Context: after save, starting spring 3 Y1.
+[16:58:31 TRACE game] Warping to Farm
+[16:58:47 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[16:58:56 TRACE game] Warping to BusStop
+[16:59:19 TRACE game] Warping to Town
+[17:00:01 TRACE game] Warping to Beach
+[17:00:39 TRACE game] Warping to Town
+[17:00:58 TRACE game] Warping to BusStop
+[17:01:05 TRACE game] Warping to Farm
+[17:01:22 TRACE game] Warping to BusStop
+[17:01:29 TRACE game] Warping to Town
+[17:01:45 TRACE game] Warping to Forest
+[17:03:54 TRACE CJB Cheats Menu] Received menu open key.
+[17:03:59 TRACE game] Warping to Farm
+[17:04:19 TRACE CJB Cheats Menu] Received menu open key.
+[17:04:35 TRACE game] Warping to Beach
+[17:05:58 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:07:31 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:07:34 TRACE CJB Cheats Menu] Received menu open key.
+[17:07:36 TRACE game] Warping to Farm
+[17:07:56 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:08:52 TRACE game] Warping to FarmHouse
+[17:08:57 TRACE SMAPI] Synchronizing 'NewDay' task...
+[17:08:57 TRACE SMAPI]    task complete.
+[17:09:03 TRACE SMAPI] Context: before save.
+[17:09:09 TRACE game] SaveGame.Save() called.
+[17:09:09 TRACE SMAPI] Synchronizing 'Save' task...
+[17:09:09 TRACE game] Saving without compression...
+[17:09:10 TRACE SMAPI]    task complete.
+[17:09:10 TRACE game] SaveGame.Save() completed without exceptions.
+[17:09:14 TRACE SMAPI] Context: after save, starting spring 4 Y1.
+[17:09:16 TRACE game] Warping to Farm
+[17:09:35 TRACE game] Warping to BusStop
+[17:09:39 TRACE game] Warping to Farm
+[17:10:49 TRACE game] Warping to BusStop
+[17:10:56 TRACE game] Warping to Town
+[17:11:20 TRACE game] Warping to Mountain
+[17:13:09 TRACE CJB Cheats Menu] Received menu open key.
+[17:13:15 TRACE game] Warping to Beach
+[17:13:17 TRACE game] Warping to FishShop
+[17:13:25 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:13:28 TRACE CJB Cheats Menu] Received menu open key.
+[17:13:34 TRACE game] Warping to Town
+[17:13:36 TRACE game] Warping to SeedShop
+[17:13:51 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:14:20 TRACE game] Warping to Town
+[17:14:22 TRACE CJB Cheats Menu] Received menu open key.
+[17:14:24 TRACE game] Warping to Farm
+[17:15:12 TRACE CJB Cheats Menu] Received menu open key.
+[17:15:17 TRACE game] Warping to Beach
+[17:20:08 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:20:28 TRACE game] Warping to FishShop
+[17:20:37 TRACE game] Warping to Beach
+[17:20:47 TRACE CJB Cheats Menu] Received menu open key.
+[17:20:54 TRACE game] Warping to Farm
+[17:21:18 TRACE CJB Cheats Menu] Received menu open key.
+[17:21:33 TRACE game] Warping to FarmHouse
+[17:21:39 TRACE SMAPI] Synchronizing 'NewDay' task...
+[17:21:40 TRACE SMAPI]    task complete.
+[17:21:42 TRACE SMAPI] Context: before save.
+[17:21:49 TRACE game] SaveGame.Save() called.
+[17:21:49 TRACE SMAPI] Synchronizing 'Save' task...
+[17:21:49 TRACE game] Saving without compression...
+[17:21:49 TRACE SMAPI]    task complete.
+[17:21:49 TRACE game] SaveGame.Save() completed without exceptions.
+[17:21:53 TRACE SMAPI] Context: after save, starting spring 5 Y1.
+[17:21:55 TRACE game] Warping to Farm
+[17:22:19 TRACE game] Warping to Farm
+[17:22:43 TRACE CJB Cheats Menu] Received menu open key, but an event is active.
+[17:22:44 TRACE CJB Cheats Menu] Received menu open key, but an event is active.
+[17:22:54 TRACE game] Warping to Farm
+[17:23:43 TRACE game] Warping to BusStop
+[17:23:50 TRACE game] Warping to Town
+[17:24:07 TRACE CJB Cheats Menu] Received menu open key.
+[17:24:09 TRACE game] Warping to Farm
+[17:24:21 TRACE game] Warping to BusStop
+[17:24:28 TRACE game] Warping to Town
+[17:26:04 TRACE game] Warping to SeedShop
+[17:26:49 TRACE game] Warping to Town
+[17:27:03 TRACE CJB Cheats Menu] Received menu open key.
+[17:27:06 TRACE game] Warping to Farm
+[17:27:15 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:27:35 TRACE CJB Cheats Menu] Received menu open key.
+[17:27:37 TRACE game] Warping to Mine
+[17:27:43 TRACE game] Warping to Mine
+[17:27:55 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:27:58 TRACE game] Warping to UndergroundMine1
+[17:28:10 TRACE game] Warping to UndergroundMine2
+[17:29:12 TRACE game] Warping to UndergroundMine3
+[17:30:21 TRACE game] Warping to UndergroundMine4
+[17:31:16 TRACE game] Warping to UndergroundMine5
+[17:32:03 TRACE game] Warping to UndergroundMine6
+[17:34:15 TRACE game] Warping to UndergroundMine7
+[17:35:04 TRACE game] Warping to UndergroundMine8
+[17:35:51 TRACE game] Warping to UndergroundMine9
+[17:36:24 TRACE game] Warping to UndergroundMine10
+[17:36:32 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:36:38 TRACE game] Warping to Mine
+[17:36:55 TRACE CJB Cheats Menu] Received menu open key.
+[17:36:57 TRACE game] Warping to Farm
+[17:37:26 TRACE game] Warping to FarmHouse
+[17:37:46 TRACE game] Warping to Farm
+[17:38:04 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:38:07 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:38:15 TRACE game] Warping to FarmHouse
+[17:38:19 TRACE SMAPI] Synchronizing 'NewDay' task...
+[17:38:19 TRACE SMAPI]    task complete.
+[17:38:22 TRACE SMAPI] Context: before save.
+[17:38:22 TRACE game] SaveGame.Save() called.
+[17:38:22 TRACE SMAPI] Synchronizing 'Save' task...
+[17:38:22 TRACE game] Saving without compression...
+[17:38:22 TRACE SMAPI]    task complete.
+[17:38:22 TRACE game] SaveGame.Save() completed without exceptions.
+[17:38:24 TRACE SMAPI] Context: after save, starting spring 6 Y1.
+[17:38:28 TRACE game] Warping to Farm
+[17:40:10 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:40:20 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:41:56 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:47:16 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:47:35 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:51:54 TRACE game] Warping to FarmHouse
+[17:51:55 TRACE game] Warping to Farm
+[17:52:31 TRACE game] Warping to FarmHouse
+[17:52:42 TRACE game] Warping to Farm
+[17:52:46 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:53:02 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:53:25 TRACE game] Warping to FarmHouse
+[17:53:30 TRACE SMAPI] Synchronizing 'NewDay' task...
+[17:53:31 TRACE SMAPI]    task complete.
+[17:53:32 TRACE SMAPI] Context: before save.
+[17:53:32 TRACE game] SaveGame.Save() called.
+[17:53:32 TRACE SMAPI] Synchronizing 'Save' task...
+[17:53:32 TRACE game] Saving without compression...
+[17:53:32 TRACE SMAPI]    task complete.
+[17:53:32 TRACE game] SaveGame.Save() completed without exceptions.
+[17:53:34 TRACE SMAPI] Context: after save, starting spring 7 Y1.
+[17:53:49 TRACE game] Warping to Farm
+[17:55:17 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:1920 Height:1080}
+[17:56:53 TRACE game] Disconnected: ClosedGame
+[17:56:53 TRACE SMAPI] Disposing...
+[17:56:53 TRACE SMAPI] Disposing the content coordinator. Content managers will no longer be usable after this point.
